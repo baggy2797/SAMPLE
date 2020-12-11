@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Page Stack Navigation</title>
+	<meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
+	<meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon_io/apple-touch-icon.png">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/new.css" />
+	<script src="js/modernizr-custom.js"></script>
+	<script src="js/new_one.js"></script>
+</head>
+
+<body>
+	
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Sentiments Analysis</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Recommender</a></div>
+	</nav>
+	
+
+	<div class="pages-stack">
+		<div class="page" id="page-home">
+
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">TV Shows Muster and Analysis</h1>
+				<p class="bp-header__desc">Based on works of Aditya Bhagwat, Abhimanshu Mishra , Sharvari Joshi and Vinit Bhosale. </p>
+			</header>
+			<img class="poster1" src="favicon_io/android-chrome-512x512.jpg" alt="img01" />
+		</div>
+
+		<div class="page" id="page-docu">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Sentiment Analysis</h1>
+				<p class="bp-header__desc">Based on works of Aditya Bhagwat, Abhimanshu Mishra , Sharvari Joshi and Vinit Bhosale. </p>
+			</header>
+			<img class="poster" src="PICTURES/WhatsApp Image 2020-12-08 at 9.00.59 PM (3).jpeg" alt="img06" />
+			<form>
+				<div id="unicycle1" class="unicycle">
+					<input type="range" class="unicycle__wheel" name="unicycle" min="0" max="100" value="0">
+					<div class="unicycle__marker">
+						<div class="unicycle__rider-head"></div>
+						<div class="unicycle__rider-body">
+							<div class="unicycle__left-arm">
+								<div class="unicycle__left-lower-arm"></div>
+							</div>
+							<div class="unicycle__right-arm">
+								<div class="unicycle__right-lower-arm">
+									<div class="unicycle__flag-pole">
+										<div class="unicycle__flag">0</div>
+									</div>
+								</div>
+							</div>
+							<div class="unicycle__left-leg">
+								<div class="unicycle__left-lower-leg"></div>
+							</div>
+							<div class="unicycle__right-leg">
+								<div class="unicycle__right-lower-leg"></div>
+							</div>
+						</div>
+						<div class="unicycle__seat"></div>
+						<div class="unicycle__bar"></div>
+						<div class="unicycle__pedal-arms">
+							<div class="unicycle__pedal"></div>
+							<div class="unicycle__pedal"></div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		
+		<div class="page" id="page-manuals">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Recommender</h1>
+				<p class="bp-header__desc">Based on works of Aditya Bhagwat, Abhimanshu Mishra , Sharvari Joshi and Vinit Bhosale. </p>
+			</header>
+			<img class="poster2" src="PICTURES/WhatsApp Image 2020-12-08 at 9.00.59 PM (2).jpeg" alt="img02" />
+			<form  action="">
+				<label>Enter the Rating for the TV show:</label>
+				<input class="rate" type="text" id=ratename>
+			</form>
+		</div>
+	</div>
+	
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
